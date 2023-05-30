@@ -1,7 +1,7 @@
 // cartPage.js
 class CartCheck {
     getCartItems() {
-      return cy.xpath('//div//ul[contains(@class,"Cart_cart-items__3eFBN")]/li');
+      return cy.xpath('//div//ul[contains(@class,"Cart")]/li');
     }
   
     getCartItemPrice(itemName) {

@@ -1,4 +1,4 @@
-import CartCheck from '../../support/cartPage'
+import CartCheck from '../../support/cart-page'
 import CartPage from '../../support/cart'
 
 import 'cypress-xpath';
@@ -19,7 +19,7 @@ scenario3.forEach((item) => {
     cy.xpath(`//li[contains(.,'${item.name}')]`).should('exist');
     // Adding item to the cart
     CartPage.addItemAndCheckCart(item.name, item.amount)
-    cy.get('.CartItem_cart-item__1Il1F').contains(item.name);
+    CartPage.getCartItemText().contains(item.name);
     CartPage.getButton("Order").click();
     // Checking Calculation 
     CartCheck.getCartItems().each((li) => {
