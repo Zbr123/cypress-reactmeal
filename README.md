@@ -1,10 +1,10 @@
-# Manual Bugs and Improvemen
-- File with the Name Bugs-Improvement.pdf contains all the bugs and improvement
-
 # ReactMeal
 
     1. Install the dependencies by running npm install
     2. Start the app by running npm start
+
+# Manual Bugs and Improvement
+- File with the Name Bugs-Improvement.pdf contains all the bugs and improvement    
 
 # cypress-reactmeal
 
